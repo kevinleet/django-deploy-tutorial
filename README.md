@@ -24,8 +24,16 @@ Follow the steps below to prepare your Django project for deployment:
 
    - In your project's root directory, create a file named: **runtime.txt**
    - Inside of the file, specify which version of Python to use. It is preferred to use the same version of Python that you're running locally.
-     runtime.txt >>> **python -3.11.4**
-
+   - To check which version you are running virtually, type in your terminal: **python3 --version**
      ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
 
-   - To check which version you are running virtually, type in your terminal: **python3 --version**+
+3. Install whitenoise
+
+   **This step is only necessary if you are serving any static files from a framework, such as Django REST Framework. If you do not have static files to serve and are only deploying for REST API access, you can skip this step.**
+
+   - In your project's root directory, run the following command: **pipenv install whitenoise**
+   - In your settings.py file, add the following to the MIDDLEWARE section: **'whitenoise.middleware.WhiteNoiseMiddleware'**
+   - In your settings.py file, add the following below the existing STATIC_URL line:
+     - **STATIC_ROOT = os.path.join(BASE_DIR, 'static')**
+     - **STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'**
+   - In your project's root directory, run the following command: **python3 manage.py collectstatic**
