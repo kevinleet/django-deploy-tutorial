@@ -18,6 +18,8 @@ Follow the steps below to prepare your Django project for deployment:
 
    - In your project's root directory, run the following command: **pipenv install gunicorn**
 
+     ![gunicorn](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/gunicorn.png?raw=true)
+
 2. Create runtime.txt
 
    - In your project's root directory, create a file named: **runtime.txt**
