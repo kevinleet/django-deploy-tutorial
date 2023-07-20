@@ -58,3 +58,27 @@ Follow the steps below to prepare your Django project for deployment:
    ![static](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/static.png?raw=true)
 
    4. In your project's root directory, run the following command: **python3 manage.py collectstatic**
+
+## Deploying to Railway
+
+Congratulations! Your Django project is now ready for deployment. Follow the steps below to deploy your project to Railway:
+
+### Step 1: Log in to Railway
+
+Visit [Railway](https://railway.app/) and log in to your account.
+
+### Step 2: Initialize Railway Project
+
+If you haven't done this before, you'll need to initialize a new Railway project for your Django backend. Click on "New Project" and select your Git repository where your Django project is located.
+
+### Step 3: Configure the Deployment
+
+Once your project is initialized, you'll need to configure the deployment settings. Railway will automatically detect that you have a Python project and suggest the appropriate settings. Verify that the detected settings are correct and proceed.
+
+### Step 4: Deploy Your Django Project
+
+Click on the "Deploy" button, and Railway will begin the deployment process. You can monitor the progress in the Railway dashboard.
+
+### Step 5: Access Your Deployed Django App
+
+After the deployment is successful, Railway will provide you with a URL where your Django app is accessible. Click on the link, and your Django project is now live!
