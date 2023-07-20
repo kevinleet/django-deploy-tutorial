@@ -20,14 +20,14 @@ Follow the steps below to prepare your Django project for deployment:
 
      ![gunicorn](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/gunicorn.png?raw=true)
 
-2. Create runtime.txt
+2. ### Create runtime.txt
 
    1. In your project's root directory, create a file named: **runtime.txt**
    2. Inside of the file, specify which version of Python to use. It is preferred to use the same version of Python that you're running locally.
    3. To check which version you are running virtually, type in your terminal: **python3 --version**
       ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
 
-3. Install whitenoise
+3. ### Install whitenoise
 
    **This step is only necessary if you are serving any static files from a framework, such as Django REST Framework. If you do not have static files to serve and are only deploying for REST API access, you can skip this step.**
 
