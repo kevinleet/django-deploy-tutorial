@@ -33,9 +33,13 @@ Follow the steps below to prepare your Django project for deployment:
 
    - **ALLOWED_HOSTS = ['*']**
 
+     ![allowedhosts](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/allowedhosts.png?raw=true)
+
    If you have a front end deployed that will access this Django deployment, add your front end url to the CSRF_TRUSTED_ORIGINS array:
 
    - **CSRF_TRUSTED_ORIGINS = ["http://yourfrontend.com"]**
+
+     ![trustedorigins](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/trustedorigins.png?raw=true)
 
 4. ### Install whitenoise
 
