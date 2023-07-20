@@ -29,7 +29,7 @@ Follow the steps below to prepare your Django project for deployment:
 
 3. ### Allow Hosts and Trusted Origins
 
-   1. In your settings.py file, update the following variables as pictured:
+   In your settings.py file, update the following variables as pictured:
 
    - **ALLOWED_HOSTS = ['*']**
 
