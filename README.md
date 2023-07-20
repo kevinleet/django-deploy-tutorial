@@ -82,3 +82,9 @@ Click on the "Deploy" button, and Railway will begin the deployment process. You
 ### Step 5: Access Your Deployed Django App
 
 After the deployment is successful, Railway will provide you with a URL where your Django app is accessible. Click on the link, and your Django project is now live!
+
+## Author
+
+**Kevin Li**
+[Github](https://github.com/kevinleet)
+[LinkedIn](https://www.linkedin.com/in/kevinli617/)
