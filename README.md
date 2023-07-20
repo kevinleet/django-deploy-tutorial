@@ -85,6 +85,6 @@ After the deployment is successful, Railway will provide you with a URL where yo
 
 ## Author
 
-**Kevin Li**
+**Kevin Li** -
 [Github](https://github.com/kevinleet)
 [LinkedIn](https://www.linkedin.com/in/kevinli617/)
