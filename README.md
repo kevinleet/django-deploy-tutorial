@@ -24,6 +24,6 @@ Follow the steps below to prepare your Django project for deployment:
    - Inside of the file, specify which version of Python to use. It is preferred to use the same version of Python that you're running locally.
      runtime.txt >>> **python -3.11.4**
 
-   ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
+     ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
 
    - To check which version you are running virtually, type in your terminal: **python3 --version**+
