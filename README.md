@@ -22,25 +22,25 @@ Follow the steps below to prepare your Django project for deployment:
 
 2. Create runtime.txt
 
-   - In your project's root directory, create a file named: **runtime.txt**
-   - Inside of the file, specify which version of Python to use. It is preferred to use the same version of Python that you're running locally.
-   - To check which version you are running virtually, type in your terminal: **python3 --version**
-     ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
+   1. In your project's root directory, create a file named: **runtime.txt**
+   2. Inside of the file, specify which version of Python to use. It is preferred to use the same version of Python that you're running locally.
+   3. To check which version you are running virtually, type in your terminal: **python3 --version**
+      ![runtime.txt](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/runtime.png?raw=true)
 
 3. Install whitenoise
 
    **This step is only necessary if you are serving any static files from a framework, such as Django REST Framework. If you do not have static files to serve and are only deploying for REST API access, you can skip this step.**
 
-   - In your project's root directory, run the following command: **pipenv install whitenoise**
-   - In your settings.py file, add the following to the MIDDLEWARE section: **'whitenoise.middleware.WhiteNoiseMiddleware'**
+   1. In your project's root directory, run the following command: **pipenv install whitenoise**
+   2. In your settings.py file, add the following to the MIDDLEWARE section: **'whitenoise.middleware.WhiteNoiseMiddleware'**
 
    ![middleware](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/middleware.png?raw=true)
 
-   - In your settings.py file, add the following below the existing STATIC_URL line:
+   3. In your settings.py file, add the following below the existing STATIC_URL line:
 
-     - **STATIC_ROOT = os.path.join(BASE_DIR, 'static')**
-     - **STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'**
+   - **STATIC_ROOT = os.path.join(BASE_DIR, 'static')**
+   - **STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'**
 
-       ![static](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/static.png?raw=true)
+     ![static](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/static.png?raw=true)
 
-   - In your project's root directory, run the following command: **python3 manage.py collectstatic**
+   4. In your project's root directory, run the following command: **python3 manage.py collectstatic**
