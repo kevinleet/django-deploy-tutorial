@@ -55,6 +55,8 @@ Follow the steps below to prepare your Django project for deployment:
    - **STATIC_ROOT = os.path.join(BASE_DIR, 'static')**
    - **STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'**
 
+   At the top of the settings.py file, insert: **import os**
+
    ![static](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/static.png?raw=true)
 
    4. In your project's root directory, run the following command: **python3 manage.py collectstatic**
