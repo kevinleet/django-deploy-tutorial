@@ -1,6 +1,6 @@
 # Django Project Deployment to Railway
 
-In this tutorial, we'll walk you through the steps to deploy your Django project to Railway. Railway is a platform for deploying and managing web applications.
+In this tutorial, I'll walk you through the steps to deploy your Django project to Railway. Railway is a platform for deploying and managing web applications.
 
 ## Prerequisites
 
