@@ -33,7 +33,14 @@ Follow the steps below to prepare your Django project for deployment:
 
    - In your project's root directory, run the following command: **pipenv install whitenoise**
    - In your settings.py file, add the following to the MIDDLEWARE section: **'whitenoise.middleware.WhiteNoiseMiddleware'**
+
+   ![middleware](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/middleware.png?raw=true)
+
    - In your settings.py file, add the following below the existing STATIC_URL line:
+
      - **STATIC_ROOT = os.path.join(BASE_DIR, 'static')**
      - **STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'**
+
+       ![static](https://github.com/kevinleet/django-deploy-tutorial/blob/main/images/static.png?raw=true)
+
    - In your project's root directory, run the following command: **python3 manage.py collectstatic**
