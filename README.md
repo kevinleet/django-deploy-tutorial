@@ -14,4 +14,5 @@ Before you begin, make sure you have the following prerequisites:
 
 Follow the steps below to prepare your Django project for deployment:
 
-### 1. Test
+1. Install Gunicorn
+   In your project's root directory, run the following command: pipenv install gunicorn
